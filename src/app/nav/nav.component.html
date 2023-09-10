@@ -1,0 +1,70 @@
+<nav class="navbar navbar-dark bg-dark ">
+    <div class="container-fluid">
+
+        <div class="container-logo">
+           <img class="logo-img" src="../../assets/img/4200_3_03.jpg" alt=""> <a class="navbar-brand logo-text" routerLink="/">{{textoMostrado}}</a>
+        </div>
+
+        <!--Inicio de offcanvas-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <i class="fa-brands fa-gitter" style="color: #ff4d00;"></i>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <p></p>
+                <button type="button" class="btn btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close">
+                    <i class="fa-solid fa-circle-xmark fa-lg" style="color: #ff4d00;"></i>
+                </button>
+            </div>
+            <div class="profile-offcanvas">
+                    <h5 class="offcanvas-title logo-text" id="offcanvasDarkNavbarLabel">{{textoMostrado}}</h5>
+                    <img src="../../assets/img/4200_3_03.jpg" alt="">
+
+                <hr class="divide">
+                    <div class="list-information">
+                        <div><p><i class="fa-solid fa-fingerprint"></i> <span> Yorlin Quispe Ygnacio</span></p></div>
+                        <div><p><i class="fa-solid fa-house-laptop"></i> <span> DevOps | Full Stak</span></p></div>
+                    </div>
+                <hr class="divide">
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item animate-border">
+                        <a class="nav-link"  routerLinkActive="active"  [routerLinkActiveOptions]="{exact: true}" aria-current="page"  routerLink="/">Inicio</a>
+                    </li>
+                    <li class="nav-item animate-border">
+                        <a class="nav-link"  routerLinkActive="active" routerLink="/projects">Proyectos</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item animate-border" routerLink="/">Action</a></li>
+                            <li><a class="dropdown-item animate-border" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li> -->
+                </ul>
+            </div>
+
+            <div class="offcanvas-footer">
+                <div class="btn-group me-2 margin-group" role="group" aria-label="First group">
+                    <a href="#" class="btn btn-outline-secondary" aria-current="page"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="btn btn-outline-secondary" aria-current="page"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="btn btn-outline-secondary" aria-current="page"><i class="fa-brands fa-whatsapp"></i></a>
+                  </div>
+            </div>
+
+        </div>
+        <!--Fin de offcanvas-->
+
+    </div>
+</nav>

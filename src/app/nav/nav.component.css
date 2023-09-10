@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
+.logo-text{
+    font-family: 'Righteous', serif; 
+}
+
+.bg-dark,.offcanvas{
+    background-color: #01040a !important;
+}
+
+.container-logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+/* .nav-item a{
+    transition: border-bottom 0.5s ease-out;
+}
+
+.active{
+    border-bottom: 1px solid #ff4b00 !important;
+} */
+
+@keyframes loadingBorder {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+
+  }
+  
+  .nav-item.animate-border a {
+    position: relative;
+  }
+  
+  .nav-item.animate-border a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ff4b00;
+    transition: width 0.5s ease-in-out;
+  }
+  
+.nav-item.animate-border a.active::after {
+   width: 100%;
+   animation: loadingBorder 1s ease-in-out forwards;
+}
+
+.navbar-toggler{
+    color: #ff4b00 !important;
+}
+
+.profile-offcanvas{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-offcanvas{
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+.profile-offcanvas .divide{
+    width: 80%;
+    height: 1px;
+    background-color: #ffffff41;
+}
+
+.profile-offcanvas img{
+    margin-top: 1.5rem;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+
+.list-information{
+    align-content: start !important;
+}
+
+.offcanvas-footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.offcanvas-footer .margin-group{
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 600px) {
+    .logo-img{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        object-fit: contain;
+    }
+}

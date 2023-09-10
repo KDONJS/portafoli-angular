@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Ocultar scrollbar para IE, Edge y Firefox */
+  html, body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
