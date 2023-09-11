@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Righteous);
 
+.card-text{
+    text-align: justify;
+}
+
 .bg-dark-custom{
     background-image: url("../../assets/img/tipo2.svg") !important;
     background-position: center;
@@ -115,6 +119,32 @@
     font-size: 1.5rem;
 }
 
+.card-profile{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.herramienta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.img-herramienta{
+    
+}
+
+.text-herramienta p{
+    font-size: 1.7rem;
+}
+
+.img-herramienta img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
 @media (max-width: 415px) {
     .card-section{
         gap: 1rem;
@@ -139,6 +169,19 @@
         font-size: 0.6rem;  
     }
 
+    .col .title{
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .card-profile{
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    .card-text{
+        text-align: start;
+    }
 }
 
 @media (max-width: 600px) {
@@ -165,6 +208,7 @@
 
     .col .title{
         text-align: center;
+        font-size: 1.2rem;
     }
 
 }
@@ -183,5 +227,12 @@
 
     .col .title{
         text-align: center;
+        font-size: 1.5rem;
+        margin-top: 2rem;
     }
+
+    .card-m{
+        margin-top: 2rem;
+    }    
+    
 }

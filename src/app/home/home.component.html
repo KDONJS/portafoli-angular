@@ -9,33 +9,63 @@
           </div>
           <div class="container-description">
             <div class="description">
-              <div><p><i class="fa-solid fa-building-circle-check"></i> - NTTDATA</p></div>
-              <div><p><i class="fa-solid fa-map-location"></i> - Lima Perú</p></div>
-              <div><p><i class="fa-solid fa-briefcase"></i> - DevOps | Fullstak</p></div>
-              <div><a href="">
-                <p><i class="fa-brands fa-linkedin"></i> - Yorlin-Quispe</p>
-              </a></div>
-              <div><a href="">
-                <p><i class="fa-brands fa-github"></i> - KDONJS</p>
-              </a></div>
+              <div>
+                <p>
+                  <i class="fa-solid fa-building-circle-check"></i> - NTTDATA
+                </p>
+              </div>
+              <div>
+                <p><i class="fa-solid fa-map-location"></i> - Lima Perú</p>
+              </div>
+              <div>
+                <p><i class="fa-solid fa-briefcase"></i> - DevOps | Fullstak</p>
+              </div>
+              <div>
+                <a href="">
+                  <p><i class="fa-brands fa-linkedin"></i> - Yorlin-Quispe</p>
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <p><i class="fa-brands fa-github"></i> - KDONJS</p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
         <div class="col">
+          <div class="card-profile">
+            <div class="card mb-3 bg-dark-card card-m">
+              <div class="card-body text-secondary">
+                <h2 class="text-white">
+                  <i class="fa-solid fa-user-secret"></i>
+                </h2>
+                <p class="card-text text-white">
+                  Apasionado por las tecnologías de vanguardia, mi enfoque se
+                  centra en mantener un aprendizaje continuo y autónomo que me
+                  permita estar a la vanguardia de las innovaciones del sector.
+                  Mi especialidad radica en la automatización y optimización de
+                  procesos, áreas donde empleo un enfoque analítico y creativo
+                  para resolver problemas complejos. Mi objetivo principal es
+                  diseñar e implementar estrategias eficaces que no solo
+                  simplifiquen los flujos de trabajo, sino que también fomenten
+                  una cultura de integración continua.
+                </p>
+              </div>
+            </div>
+          </div>
           <div class="title">
             <h2>Conocimiento y Herramientas</h2>
           </div>
           <div class="card-section">
-            <div
-              *ngFor="let elemento of elementos"
-              class="card mb-3 bg-dark-card"
-              style="max-width: 18rem"
-            >
-              <div class="card-body text-secondary">
-                <h5 class="card-title text-purple"><i class="fa-brands fa-java"></i> Java</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                </p>
+            <div *ngFor="let elemento of elementos" class="description">
+              <div class="herramienta">
+                <div class="img-herramienta">
+                  <img src="../../assets/img/icon/angular-icon-1.svg" alt="">
+                </div>
+                <div class="text-herramienta">
+                  <p>ANGULAR</p>
+                </div>
               </div>
             </div>
           </div>
