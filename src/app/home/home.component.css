@@ -1,5 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
 .bg-dark-custom{
-    background-image: url("../../assets/img/backsvg.svg") !important;
+    background-image: url("../../assets/img/tipo2.svg") !important;
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
@@ -14,7 +16,7 @@
     backdrop-filter: blur(16.5px);
     -webkit-backdrop-filter: blur(16.5px);
     border: 1px solid rgba(11, 10, 10, 0.3);
-    margin: 0.5rem;
+    margin: 2rem 0.6rem 1rem 0.6rem;
 }
 
 .row-custom{
@@ -48,7 +50,6 @@
     backdrop-filter: blur( 11.5px );
     -webkit-backdrop-filter: blur( 11.5px );
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .container-home{
@@ -56,6 +57,63 @@
     margin-top: 60px;
 }
 
+.col .title{
+    color: white;
+    padding-bottom: 1.5rem;
+    font-weight: 700;
+    text-align: start;
+    margin-left: 1.4rem;
+}
+
+.text-purple{
+ color: #ff007a;
+}
+
+.container-description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description{
+    margin-top: 1rem;
+    padding: 1rem;
+    width: max-content;
+    text-align: start;
+    width: 300px;
+    background: rgba( 0, 0, 0, 0.8 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11px );
+    -webkit-backdrop-filter: blur( 11px );
+    border-radius: 10px;
+}
+
+.description a{
+    text-decoration: none;
+}
+
+.description p{
+    padding: 0.5rem;
+    color: white;
+    font-size: 1rem;
+}
+
+.description i{
+    margin-left: 1rem;
+    margin-right: 0.9rem;
+}
+
+.text-name{
+    padding: 1rem;
+    background: rgba( 0, 0, 0, 0.8 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11px );
+    -webkit-backdrop-filter: blur( 11px );
+    border-radius: 10px;
+    margin-top: 1rem;
+    font-family: 'Righteous', serif; 
+    font-size: 1.5rem;
+}
 
 @media (max-width: 415px) {
     .card-section{
@@ -75,6 +133,12 @@
         height: 200px;
         border-radius: 50%;
     }
+
+    .text-name{
+        padding: 0.5rem;
+        font-size: 0.6rem;  
+    }
+
 }
 
 @media (max-width: 600px) {
@@ -95,6 +159,14 @@
         border-radius: 50%;
     }
 
+    .text-name{
+        font-size: 1.3rem;  
+    }
+
+    .col .title{
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 900px) {
@@ -107,5 +179,9 @@
     .row-custom{
         display: flex;
         flex-direction: column;
+    }
+
+    .col .title{
+        text-align: center;
     }
 }
