@@ -37,9 +37,6 @@
           <div class="card-profile">
             <div class="card mb-3 bg-dark-card card-m">
               <div class="card-body text-secondary">
-                <h2 class="text-white">
-                  <i class="fa-solid fa-user-secret"></i>
-                </h2>
                 <p class="card-text text-white">
                   Apasionado por las tecnologías de vanguardia, mi enfoque se
                   centra en mantener un aprendizaje continuo y autónomo que me
@@ -58,16 +55,21 @@
             <h2>Conocimiento y Herramientas</h2>
           </div>
           <div class="card-section">
-            <div *ngFor="let elemento of elementos" class="description">
-              <div class="herramienta">
-                <div class="img-herramienta">
-                  <img src="../../assets/img/icon/angular-icon-1.svg" alt="">
-                </div>
-                <div class="text-herramienta">
-                  <p>ANGULAR</p>
-                </div>
+            <!-- inicio nuva card-->
+            <div *ngFor="let elemento of elementos" class="card-conocimiento">
+              <div class="info-area">
+                <span>FrontEnd</span>
               </div>
+              <div class="info-img">
+                <img src="../../assets/img/icon/angular-icon-1.svg" alt="">
+              </div>
+              <div class="info-tecnology">
+                <p><span class="tecnology">Angular:</span><span class="description-tec"> Framework frontend </span></p>
+              </div>
+              <div class="code-color-green"></div>
             </div>
+            <!-- Fin nuva card-->
+
           </div>
         </div>
       </div>
